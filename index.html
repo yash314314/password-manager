@@ -1,0 +1,86 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>password manager</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: moon flower;
+        }
+        nav{
+            background-color: rgb(255, 120, 53 );
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        ul{
+            display: flex;
+             color: aliceblue;
+        }
+        li{
+            background-color: rgb(255, 120, 53);
+        }
+        ul>li{
+            list-style: none;
+            margin: 4px 10px;
+        }
+        nav ul>li:hover{
+            color: rgb(0, 0, 0);
+        }
+        body{
+            font-family: moon flower;
+            font-weight: bolder;
+        }
+        tr{
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">securevault</div>
+        <ul style="font-size:x-large; background-color: rgb(255, 120, 53);">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+
+
+<h1 style="font-weight: 900;">Welcome to SecureVault!</h1>
+Your security and peace of mind are our top priorities. At SecureVault, we understand the importance of keeping your digital life safe and organized. Our advanced password manager is designed to protect your sensitive information with the highest level of security.
+
+Why Choose SecureVault?
+<ul class="point"  style="margin-top: 10;">
+    <li>*Unparalleled Security: We use state-of-the-art encryption to ensure your passwords are safe from any threats.</li>
+    <li>*User-Friendly Interface: Our intuitive design makes managing your passwords effortless.</li>
+    <li>*Anywhere Access: Securely access your passwords from any device, anytime, anywhere.</li>
+</ul>
+
+        <h2 style="margin-bottom: 10px;">your passwords</h2>
+        <table>
+            <tr>
+            <th style="padding-right: 10px;">website</th>
+            <th style="padding-right: 10px;">username</th>
+            <th style="padding-right: 10px;">password</th>
+            <th style="padding-right: 10px;">delete</th>
+        </tr>
+        
+        </table>
+         <div class="formC"><h2 style="padding: 10px;  color: aliceblue;">add a password</h2><form action="/add-password" method="post">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="text" id="website" name="website" placeholder="Website URL" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit" class="btn">Add a password</button>
+        </form></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
